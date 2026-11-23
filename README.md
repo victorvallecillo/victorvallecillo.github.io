@@ -10,4 +10,11 @@ The site uses plain HTML, CSS, and JavaScript, so there is no build step or pack
 
 To preview a change locally, open `index.html` in a browser or serve this folder with a static file server.
 
-The portfolio text is based on Victor's LinkedIn profile. Update the project links and experience in `index.html` as they change.
+## Files
+
+- `index.html` — portfolio content and structure
+- `styles.css` — layout, responsive styling, and motion
+- `script.js` — navigation, scroll reveals, and reading progress
+- `assets/victor-portrait.jpg` — profile photo used in the introduction
+
+The project descriptions are based on their public GitHub READMEs. Experience and learning details are based on Victor's LinkedIn profile.
