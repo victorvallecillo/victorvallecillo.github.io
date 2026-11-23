@@ -1,16 +1,13 @@
 # Victor Vallecillo — Portfolio
 
-A small static portfolio for GitHub Pages. It uses plain HTML, CSS, and JavaScript; there is no build step or package installation.
+Static portfolio hosted from this repository with GitHub Pages.
 
-## Preview locally
+**Live site:** <https://victorvallecillo.github.io/>
 
-Open `index.html` in a browser, or serve this folder with any static file server.
+## Edit the site
 
-## Publish with GitHub Pages
+The site uses plain HTML, CSS, and JavaScript, so there is no build step or package installation. Edit `index.html`, `styles.css`, or `script.js` and push the changes to `main`. GitHub Pages publishes the files from the repository root.
 
-1. Add the files in this folder to the root of `victorvallecillo/victorvallecillo.github.io`.
-2. In the repository, open **Settings → Pages**.
-3. Choose **Deploy from a branch**, select the default branch and `/ (root)`, then save.
-4. GitHub Pages will publish the site at `https://victorvallecillo.github.io/`.
+To preview a change locally, open `index.html` in a browser or serve this folder with a static file server.
 
-The featured project descriptions and experience are based on Victor's LinkedIn profile. Review the wording and public links before publishing.
+The portfolio text is based on Victor's LinkedIn profile. Update the project links and experience in `index.html` as they change.
