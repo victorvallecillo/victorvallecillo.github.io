@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=ea71dc7" />
+    <link rel="stylesheet" href="styles.css?v=20261127" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -45,7 +45,7 @@
             <p class="hero-intro">
               I’ve been a lifeguard, a firefighter, and a boarding assistant. In each job, I learned to notice what’s changing, stay calm, and make the next step clear. I’m bringing that into IT support.
             </p>
-            <p class="hero-now"><span class="now-mark" aria-hidden="true"></span><span><strong>Right now:</strong> Harvard’s CS50, a 25-user Microsoft 365 lab, and Python tools that show their plan before they run.</span></p>
+            <p class="hero-now"><span class="now-mark" aria-hidden="true"></span><span><strong>Right now:</strong> Harvard’s CS50, a 25-user Microsoft 365 lab, and Python tools that preview file changes before applying them.</span></p>
             <div class="hero-actions">
               <a class="button button-light" href="#work">See what I’m building <span aria-hidden="true">↓</span></a>
               <a class="hero-text-link" href="https://www.linkedin.com/in/victor-vallecillo-valero-3710113a6/" target="_blank" rel="noreferrer">LinkedIn profile <span aria-hidden="true">↗</span></a>
@@ -72,7 +72,7 @@
         <div class="section-heading">
           <div>
           <p class="section-kicker">Things I’ve made</p>
-          <h2 id="work-title">I learn by solving real problems.</h2>
+          <h2 id="work-title">Projects built around practical IT work.</h2>
           </div>
           <p class="section-aside">A Microsoft 365 sandbox, a ticket queue, and Python tools that show what they’ll do before they do it.</p>
         </div>
@@ -95,6 +95,7 @@
                 <div class="details-content"><p>The lab includes scripted joiner, mover, and leaver steps, MFA enforcement, legacy sign-in blocking, device compliance, and BYOD app protection.</p></div>
               </details>
               <a class="repo-link" href="https://github.com/victorvallecillo/m365-admin-lab" target="_blank" rel="noreferrer">Read my lab notes <span aria-hidden="true">↗</span></a>
+              <a class="repo-link" href="https://github.com/victorvallecillo/m365-admin-lab/blob/main/support-cases/compliant-device-access.md" target="_blank" rel="noreferrer">See a support scenario <span aria-hidden="true">↗</span></a>
             </div>
           </article>
 
@@ -121,19 +122,19 @@
 
           <article class="project-card project-toolkit" data-reveal>
             <div class="project-art toolkit-art" aria-hidden="true">
-              <div class="terminal-top"><span>Dry-run preview</span></div>
+              <div class="terminal-top"><span>Preview before applying</span></div>
               <div class="terminal-line"><b>$</b> python log_manager.py <em>--dry-run</em></div>
-              <div class="terminal-output">Would compress: access.log<br />Would delete: old-backup.log.gz</div>
-              <div class="terminal-line"><b>$</b> python disk_monitor.py</div>
-              <div class="terminal-output terminal-ok"><i></i> Errors: 0 &nbsp;·&nbsp; Changes made: 0</div>
+              <div class="terminal-output">Would compress: access.log<br />Would delete: old-access.log.gz</div>
+              <div class="terminal-line"><b>$</b> python disk_monitor.py <em>--dry-run</em></div>
+              <div class="terminal-output terminal-ok"><i></i> Report saved · alert skipped</div>
             </div>
             <div class="project-copy">
               <p class="project-category">Python · Standard library</p>
               <h3>IT Operations Toolkit</h3>
-              <p>The rule for these scripts: show the plan, then let me decide. Log Manager compresses older logs, File Organizer sorts by file type, and Disk Monitor checks a threshold I choose.</p>
+              <p>File changes are previewed first. Log Manager compresses older logs and removes expired archives; File Organizer sorts by file type; Disk Monitor reports when a chosen threshold is reached.</p>
               <details class="project-details">
                 <summary>What each one does <span aria-hidden="true">+</span></summary>
-                <div class="details-content"><p>Log Manager compresses logs older than seven days and clears old archives. File Organizer sorts by extension. Disk Monitor checks a configurable usage threshold.</p></div>
+                <div class="details-content"><p>Log Manager compresses .log files after seven days and removes .log.gz archives after 30 days. File Organizer previews moves before applying them. Disk Monitor writes a report and can send alerts.</p></div>
               </details>
               <a class="repo-link" href="https://github.com/victorvallecillo/it-automation-toolkit" target="_blank" rel="noreferrer">Browse the toolkit <span aria-hidden="true">↗</span></a>
             </div>
@@ -185,7 +186,7 @@
           <p class="section-kicker">Why IT</p>
           <h2 id="about-title">My route into IT wasn’t a straight line.</h2>
           <p>I started on the beach, joined Alicante’s fire service, and now support students in Switzerland. The common thread is staying observant, following through, and helping the next person know what’s happening.</p>
-          <p>I’m studying Harvard’s CS50 and building things alongside it. My scripts run in dry-run mode first; in the Microsoft 365 lab, I write down why each policy exists.</p>
+          <p>I’m working through Harvard’s CS50 and building things alongside it. The file tools preview changes before applying them; in the Microsoft 365 lab, I document why each policy exists.</p>
         </div>
         <div class="about-side">
           <div class="learning-note">
@@ -196,7 +197,7 @@
           <div class="skills-note">
             <span class="note-label">Tools I’ve been using</span>
             <ul class="skills-list">
-              <li>Python</li><li>Flask</li><li>SQL</li><li>Linux</li><li>Git</li><li>JavaScript</li><li>HTML</li><li>React</li><li>Entra ID</li><li>Intune</li><li>Exchange Online</li>
+              <li>Windows 11</li><li>Microsoft 365</li><li>Entra ID</li><li>Intune</li><li>Exchange Online</li><li>PowerShell</li><li>Python</li><li>Flask</li><li>SQLite</li><li>Linux</li><li>Git</li>
             </ul>
           </div>
         </div>
@@ -209,7 +210,7 @@
             <h2 id="contact-title">I’m looking for an IT support role.</h2>
           </div>
           <div class="contact-right">
-            <p>If you work in IT support or operations, I’d like to hear how you got there. I’m also open to junior software roles.</p>
+            <p>I’m looking for an entry-level IT support role. If you work in support or operations, I’d be glad to hear how you got started.</p>
             <div class="contact-actions">
               <a class="button button-light" href="https://www.linkedin.com/in/victor-vallecillo-valero-3710113a6/" target="_blank" rel="noreferrer">Message me on LinkedIn <span aria-hidden="true">↗</span></a>
               <a class="contact-github" href="https://github.com/victorvallecillo" target="_blank" rel="noreferrer">Browse my GitHub</a>
