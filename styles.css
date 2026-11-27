@@ -244,15 +244,6 @@ h2 { max-width: 700px; margin-bottom: 0; font-size: clamp(40px, 4.4vw, 58px); li
 @keyframes rise-in { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes portrait-in { from { opacity: 0; transform: scale(.985); } to { opacity: 1; transform: scale(1); } }
 
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after {
-    animation-duration: .01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: .01ms !important;
-  }
-}
-
 @media (max-width: 990px) {
   .section-shell, .site-header { width: min(var(--page-width), calc(100% - 56px)); }
   .hero { min-height: 560px; grid-template-columns: minmax(0, 1fr) minmax(280px, .78fr); gap: 36px; }
